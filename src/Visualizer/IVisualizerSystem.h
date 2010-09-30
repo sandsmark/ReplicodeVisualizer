@@ -1,0 +1,17 @@
+/*
+ *  IVisualizerSystem
+ *  Visor
+ *
+ *  Created by mb on 5/29/10.
+ *  Copyright 2010 Communicative Machines. All rights reserved.
+ *
+ */
+
+namespace Visor
+{
+
+    class IVisualizerSystem
+    {
+    };
+
+}

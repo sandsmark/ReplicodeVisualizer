@@ -1,0 +1,1 @@
+MBRANE_MESSAGE_CLASS(ImageMessage)

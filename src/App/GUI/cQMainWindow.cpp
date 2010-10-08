@@ -291,7 +291,7 @@ void cQMainWindow::SetImage( r_comp::Image *iImage, r_comp::Image *iPrevImage )
         std::ostringstream	vSourceCode;
         r_code::Code *vCode = vObjects[i];
         
-        vDecompiler.decompile_object( i, &vSourceCode );
+        vDecompiler.decompile_object( i, &vSourceCode, 0 );
         
         cComponentReplicode *vComponent = new cComponentReplicode( vCode, vSourceCode.str() );
         vComponentMap[ vCode ] = vComponent;

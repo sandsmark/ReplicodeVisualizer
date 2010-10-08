@@ -156,7 +156,7 @@ void cQSourceView::InitView( r_code::View *iView )
     if ( iView->code(0).asOpcode() == r_exec::Opcodes::View )
     {
     }
-    else if ( iView->code(0).asOpcode() == r_exec::Opcodes::ReactView )
+    else if ( iView->code(0).asOpcode() == r_exec::Opcodes::PgmView )
     {
         // Activation
         AddBar( 3, "Activation", iView->code( IPGM_VIEW_ACT ).asFloat(), vGroup->get_act_thr(), mGrid );

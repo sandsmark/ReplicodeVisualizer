@@ -210,7 +210,7 @@ void cQFilterWindow::FilterView( cVisualizerHypertreeNode *iNode )
     
     if ( !CheckInterval( vView->code( VIEW_SLN ).asFloat(), VALUE_SALIENCY  ) ) return;
     if ( !CheckInterval( vView->code( VIEW_RES ).asFloat(), VALUE_RESILIENCE ) ) return;
-    if ( vView->code(0).asOpcode() == r_exec::Opcodes::ReactView )
+    if ( vView->code(0).asOpcode() == r_exec::Opcodes::PgmView )
     {
         if ( !CheckInterval( vView->code( IPGM_VIEW_ACT ).asFloat(), VALUE_ACTIVATION ) ) return;
     }

@@ -171,7 +171,7 @@ struct cPointerHash
     bool operator()( const void *iC1, const void *iC2 ) const { return false; }
 };
 
-#include <replicode/integration/r_mem_class.h>
+#include <ReplicodeIntegration/r_mem_class.h>
 #include <replicode/r_comp/decompiler.h>
 #ifdef WINDOWS
 	#include <hash_map>

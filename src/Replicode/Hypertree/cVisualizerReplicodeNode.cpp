@@ -66,17 +66,6 @@ void cVisualizerReplicodeNode::Init( void )
     {
         sprintf( Temp, "[ pgm %04d ]>", rand() % 9999 );
     }
-    else if ( vOpcode == r_exec::Opcodes::IGoal )
-    {
-        sprintf( Temp, "[ igoal %04d ]<", rand() % 9999 );
-        Ogre::ColourValue vColor = mBillboard->getColour();
-        vColor.a = 1 - vColor.a;   // Controls inverse display
-        mBillboard->setColour( vColor );
-    }
-    else if ( vOpcode == r_exec::Opcodes::Goal || vOpcode == r_exec::Opcodes::AntiGoal )
-    {
-        sprintf( Temp, "[ goal %04d ]<", rand() % 9999 );
-    }
     else if ( vOpcode == r_exec::Opcodes::MkRdx || vOpcode == r_exec::Opcodes::MkAntiRdx )
     {
         sprintf( Temp, "[ > ]" );

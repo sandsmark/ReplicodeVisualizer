@@ -20,7 +20,7 @@
 #include <Replicode/Hypertree/cVisualizerReplicode.h>
 #include <Replicode/Hypertree/cVisualizerReplicodeNode.h>
 #include <Replicode/Hypertree/cVisualizerReplicodeSettings.h>
-#include <replicode/integration/r_mem_class.h>
+#include <ReplicodeIntegration/r_mem_class.h>
 #include <replicode/r_comp/decompiler.h>
 #ifdef WINDOWS
 	#include <hash_map>

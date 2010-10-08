@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="Visor"
 	ProjectGUID="{40539D6A-196E-4B4B-B1BA-7BDFF0017D58}"
 	RootNamespace="Visor"
@@ -43,7 +43,7 @@
 				AdditionalOptions="/Zm146 /FIStdAfx.h"
 				Optimization="0"
 				AdditionalIncludeDirectories="dependencies\win32\;src;dependencies\win32\Qt\include;dependencies\win32\Ogre\include;dependencies\win32\Ogre\boost_1_42"
-				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;DEBUG_VISUALIZER"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -63,9 +63,9 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="OgreMain_d.lib OIS_d.lib OgreRTShaderSystem_d.lib QtCored4.lib QtGuid4.lib QtOpenGLd4.lib opengl32.lib r_code.lib core.lib r_exec.lib r_comp.lib CoreLibrary.lib wsock32.lib"
+				AdditionalDependencies="OgreMain_d.lib OIS_d.lib OgreRTShaderSystem_d.lib QtCored4.lib QtGuid4.lib QtOpenGLd4.lib opengl32.lib r_code.lib r_exec.lib r_comp.lib CoreLibrary.lib core.lib wsock32.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="dependencies\win32\Ogre\boost_1_42\lib;dependencies\win32\Qt\lib;dependencies\win32\Ogre\lib\debug;dependencies\win32\Replicode\Debug"
+				AdditionalLibraryDirectories="dependencies\win32\mBrane\trunk\DebugVisualizer;dependencies\win32\CoreLibrary\DebugVisualizer;dependencies\win32\Ogre\boost_1_42\lib;dependencies\win32\Qt\lib;dependencies\win32\Ogre\lib\debug;dependencies\win32\Replicode\DebugVisualizer"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				TargetMachine="1"

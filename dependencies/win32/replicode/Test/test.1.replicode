@@ -1,9 +1,0 @@
-pos1:(mk.val
-self
-position
-(vec3 0 0 0)
-1; psln_thr
-)
-
-[]
-   [now 0.9 forever stdin nil]
